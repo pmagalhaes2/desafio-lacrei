@@ -3,12 +3,12 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  background-color: #eeeeee;
+  background-color: var(--light-grey);
   padding: 0.5rem 4rem;
 }
 
 .logo {
-  color: #018762;
+  color: var(--green);
   font-weight: 700;
   font-size: 2rem;
 }
@@ -22,15 +22,15 @@ header {
 .nav-link {
   font-weight: 700;
   font-size: 1rem;
-  color: #1f1f1f;
+  color: var(--black);
 }
 
 .logo:hover,
 .nav-link:hover {
-  color: #49a68c;
+  color: (--medium-green);
   transition: all 0.2s ease 0s;
 }
 
 .active {
-  color: #018762;
+  color: var(--green);
 }
