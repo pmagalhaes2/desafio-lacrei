@@ -8,3 +8,10 @@
   list-style: none;
   text-decoration: none;
 }
+
+:root {
+  --green: #018762;
+  --medium-green: #49a68c;
+  --light-grey: #eeeeee;
+  --black: #1f1f1f;
+}
