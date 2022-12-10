@@ -10,17 +10,6 @@
   max-width: 540px;
 }
 
-.text-container h1 {
-  font-size: 3rem;
-}
-
-.text-container p {
-  color: var(--grey);
-  font-weight: var(--font-regular);
-  font-size: 1.5rem;
-  padding: 2rem 0px 3rem;
-}
-
 .buttons-container {
   max-width: 453px;
   display: flex;

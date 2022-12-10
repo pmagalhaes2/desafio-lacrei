@@ -2,13 +2,15 @@ import Button from "../Button/Button";
 import "./home-content.css";
 import vector from "../../assets/vector_1.svg";
 import { Link } from "react-router-dom";
+import Title from "../Title/Title";
+import Paragraph from "../Paragraph/Paragraph";
 
 const HomeComponent = () => {
   return (
     <div className="container">
       <div className="text-container">
-        <h1>Boas vindas a Lacrei Saúde</h1>
-        <p>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
+        <Title titleText="Boas vindas a Lacrei Saúde" />
+        <Paragraph paragraphText="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+" />
         <div className="buttons-container">
           <Button class="green-button">
             <Link to="/pessoa-usuaria">Pessoa Usuária</Link>

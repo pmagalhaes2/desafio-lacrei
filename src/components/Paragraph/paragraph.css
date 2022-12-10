@@ -1,0 +1,6 @@
+p {
+  color: var(--grey);
+  font-weight: var(--font-regular);
+  font-size: 1.5rem;
+  padding: 2rem 0px 3rem;
+}
