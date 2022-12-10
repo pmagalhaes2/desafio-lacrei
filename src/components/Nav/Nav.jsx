@@ -32,7 +32,7 @@ const Nav = () => {
               <li key={navItem.id}>
                 <Link
                   onClick={handleClick}
-                  href={navItem.path}
+                  to={navItem.path}
                   className={navItem.class}
                 >
                   {navItem.name}
