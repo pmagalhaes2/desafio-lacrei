@@ -30,7 +30,7 @@ const Footer = () => {
               <li key={footerItem.id}>
                 <Link
                   onClick={handleClick}
-                  href={footerItem.path}
+                  to={footerItem.path}
                   className={footerItem.class}
                 >
                   {footerItem.name}
