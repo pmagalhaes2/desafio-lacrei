@@ -12,6 +12,10 @@
 :root {
   --green: #018762;
   --medium-green: #49a68c;
+  --light-green: #B0E0D3;
   --light-grey: #eeeeee;
+  --grey: #515151;
   --black: #1f1f1f;
+  --white: #FFFFFF;
+  --padding-size: 4rem 4rem 0px;
 }
