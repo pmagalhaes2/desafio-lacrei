@@ -9,7 +9,7 @@ header {
 
 .logo {
   color: var(--green);
-  font-weight: 700;
+  font-weight: var(--font-bold);
   font-size: 2rem;
 }
 
@@ -20,7 +20,7 @@ header {
 }
 
 .nav-link {
-  font-weight: 700;
+  font-weight: var(--font-bold);
   font-size: 1rem;
   color: var(--black);
 }

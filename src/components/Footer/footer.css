@@ -32,7 +32,7 @@ nav a:hover,
 
 .footer-link.active {
   color: var(--black);
-  font-weight: 700;
+  font-weight: var(--font-bold);
 }
 
 img.icon:hover {
