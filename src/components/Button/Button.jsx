@@ -1,13 +1,7 @@
 import "./button.css";
 
 const Button = (props) => {
-  return (
-    <button className={props.class}>
-      <a href={props.link} target="_blank">
-        {props.children}
-      </a>
-    </button>
-  );
+  return <button className={props.class}>{props.children}</button>;
 };
 
 export default Button;
