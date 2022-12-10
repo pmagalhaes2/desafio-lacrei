@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  padding: var(--padding-size);
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-container,
+.image-container {
+  max-width: 540px;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+}
+
+.text-container p {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 2rem 0px 3rem;
+}
+
+.buttons-container {
+  max-width: 453px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+}
