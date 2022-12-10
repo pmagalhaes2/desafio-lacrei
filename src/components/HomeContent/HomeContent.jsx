@@ -10,7 +10,10 @@ const HomeComponent = () => {
     <div className="container">
       <div className="text-container">
         <Title titleText="Boas vindas a Lacrei Saúde" />
-        <Paragraph paragraphText="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+" />
+        <Paragraph
+          className="description"
+          paragraphText="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+"
+        />
         <div className="buttons-container">
           <Button class="green-button">
             <Link to="/pessoa-usuaria">Pessoa Usuária</Link>

@@ -55,7 +55,7 @@ const Footer = () => {
           </a>
         </div>
       </nav>
-      <p>Desafio Front-end Lacrei</p>
+      <p className="copyright">Desafio Front-end Lacrei</p>
     </footer>
   );
 };

@@ -1,7 +1,7 @@
 import "./paragraph.css";
 
 const Paragraph = (props) => {
-  return <p>{props.paragraphText}</p>;
+  return <p className={props.className}>{props.paragraphText}</p>;
 };
 
 export default Paragraph;
