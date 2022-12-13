@@ -1,42 +1,29 @@
 import navItems from "./navItems";
 import "./nav.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
-  const handleClick = (clickedItem) => {
-    const items = document.querySelectorAll(".nav-link");
-
-    items.forEach((item) => {
-      if (item != clickedItem) {
-        if (item.classList.contains("active")) {
-          item.classList.remove("active");
-        }
-      }
-    });
-
-    clickedItem.target.classList.contains("active")
-      ? clickedItem.target.classList.remove("active")
-      : clickedItem.target.classList.add("active");
+  const navLinkStyle = ({ isActive }) => {
+    return {
+      color: isActive ? "#018762" : "#1f1f1f",
+      fontSize: "1rem",
+      fontWeight: "700",
+    };
   };
+
   return (
     <header>
-      <li>
-        <a href="/" className="logo">
-          Lacrei
-        </a>
-      </li>
+      <Link to="/" className="logo">
+        Lacrei
+      </Link>
       <nav>
         <ul className="nav-container">
           {navItems.map((navItem) => {
             return (
               <li key={navItem.id}>
-                <Link
-                  onClick={handleClick}
-                  to={navItem.path}
-                  className={navItem.class}
-                >
+                <NavLink to={navItem.path} style={navLinkStyle}>
                   {navItem.name}
-                </Link>
+                </NavLink>
               </li>
             );
           })}

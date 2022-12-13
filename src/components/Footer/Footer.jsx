@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./footer.css";
 import footerItems from "./footerItems";
 import facebook from "../../assets/FacebookLogo.svg";
@@ -6,20 +6,11 @@ import instagram from "../../assets/InstagramLogo.svg";
 import linkedin from "../../assets/LinkedinLogo.svg";
 
 const Footer = () => {
-  const handleClick = (clickedItem) => {
-    const items = document.querySelectorAll(".footer-link");
-
-    items.forEach((item) => {
-      if (item != clickedItem) {
-        if (item.classList.contains("active")) {
-          item.classList.remove("active");
-        }
-      }
-    });
-
-    clickedItem.target.classList.contains("active")
-      ? clickedItem.target.classList.remove("active")
-      : clickedItem.target.classList.add("active");
+  const footerLinkStyle = ({ isActive }) => {
+    return {
+      color: "#1f1f1f",
+      fontWeight: isActive ? "700" : "400"
+    };
   };
   return (
     <footer>
@@ -28,13 +19,9 @@ const Footer = () => {
           {footerItems.map((footerItem) => {
             return (
               <li key={footerItem.id}>
-                <Link
-                  onClick={handleClick}
-                  to={footerItem.path}
-                  className={footerItem.class}
-                >
+                <NavLink to={footerItem.path} style={footerLinkStyle}>
                   {footerItem.name}
-                </Link>
+                </NavLink>
               </li>
             );
           })}

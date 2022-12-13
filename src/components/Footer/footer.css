@@ -29,11 +29,6 @@ nav a:hover,
   transition: all 300ms;
 }
 
-.footer-link.active {
-  color: var(--black);
-  font-weight: var(--font-bold);
-}
-
 .icons-container {
   display: flex;
   gap: 2rem;
