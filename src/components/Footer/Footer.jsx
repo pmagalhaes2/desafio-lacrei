@@ -1,9 +1,12 @@
 import { NavLink } from "react-router-dom";
-import "./footer.css";
 import footerItems from "./footerItems";
 import facebook from "../../assets/FacebookLogo.svg";
 import instagram from "../../assets/InstagramLogo.svg";
 import linkedin from "../../assets/LinkedinLogo.svg";
+import { FooterContainer, IconsContainer } from "../Container/styles";
+import { FooterContent } from "./styles";
+import { SmallParagraph } from "../Paragraph/styles";
+import { FooterNav } from "../Nav/styles";
 
 const Footer = () => {
   const footerLinkStyle = ({ isActive }) => {
@@ -12,38 +15,44 @@ const Footer = () => {
       fontWeight: isActive ? "700" : "400"
     };
   };
+
+  const MouseOver = (event) => (event.target.style.color = "#515151");
+
+  const MouseOut = (event) => (event.target.style.color = "#1f1f1f");
+
   return (
-    <footer>
-      <nav>
-        <ul className="footer-container">
+    <FooterContent>
+      <FooterNav>
+        <FooterContainer>
           {footerItems.map((footerItem) => {
             return (
               <li key={footerItem.id}>
-                <NavLink to={footerItem.path} style={footerLinkStyle}>
+                <NavLink
+                  to={footerItem.path}
+                  style={footerLinkStyle}
+                  onMouseOver={MouseOver}
+                  onMouseOut={MouseOut}
+                >
                   {footerItem.name}
                 </NavLink>
               </li>
             );
           })}
-        </ul>
-        <div className="icons-container">
+        </FooterContainer>
+        <IconsContainer>
           <a href="https://www.facebook.com/lacrei.saude" target="_blank">
-            <img className="icon" src={facebook} alt="Logo verde do Facebook" />
+            <img src={facebook} alt="Logo verde do Facebook" />
           </a>
           <a href="https://www.instagram.com/lacrei.saude/" target="_blank">
-            <img
-              className="icon"
-              src={instagram}
-              alt="Logo verde do Instagrem"
-            />
+            <img src={instagram} alt="Logo verde do Instagram" />
           </a>
           <a href="https://www.linkedin.com/company/lacrei" target="_blank">
-            <img className="icon" src={linkedin} alt="Logo verde do LinkedIn" />
+            <img src={linkedin} alt="Logo verde do LinkedIn" />
           </a>
-        </div>
-      </nav>
-      <p className="copyright">Desafio Front-end Lacrei</p>
-    </footer>
+        </IconsContainer>
+      </FooterNav>
+      <SmallParagraph>Desafio Front-end Lacrei</SmallParagraph>
+    </FooterContent>
   );
 };
 

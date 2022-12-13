@@ -1,35 +1,39 @@
-import Button from "../Button/Button";
-import "./home-content.css";
 import vector from "../../assets/vector_1.svg";
 import { Link } from "react-router-dom";
-import Title from "../Title/Title";
-import Paragraph from "../Paragraph/Paragraph";
+import { Paragraph } from "../Paragraph/styles";
+import { GreenBorderButton, GreenButton } from "../Button/styles";
+import {
+  ButtonContainer,
+  Container,
+  TextAndImageContainer,
+} from "../Container/styles";
+import { Title } from "../Title/styles";
 
 const HomeComponent = () => {
   return (
-    <div className="container">
-      <div className="text-container">
-        <Title titleText="Boas vindas a Lacrei Saúde" />
-        <Paragraph
-          className="description"
-          paragraphText="Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+"
-        />
-        <div className="buttons-container">
-          <Button class="green-button">
+    <Container>
+      <TextAndImageContainer>
+        <Title>Boas vindas a Lacrei Saúde</Title>
+        <Paragraph>
+          Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
+        </Paragraph>
+
+        <ButtonContainer>
+          <GreenButton>
             <Link to="/pessoa-usuaria">Pessoa Usuária</Link>
-          </Button>
-          <Button class="green-border-button">
+          </GreenButton>
+          <GreenBorderButton>
             <Link to="/profissional">Profissional</Link>
-          </Button>
-        </div>
-      </div>
-      <div className="image-container">
+          </GreenBorderButton>
+        </ButtonContainer>
+      </TextAndImageContainer>
+      <TextAndImageContainer>
         <img
           src={vector}
           alt="Vetor enfermeira lendo relatório de saúda de paciente"
         />
-      </div>
-    </div>
+      </TextAndImageContainer>
+    </Container>
   );
 };
 

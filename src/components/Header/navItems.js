@@ -2,20 +2,17 @@ const navItems = [
   {
     id: 1,
     name: "Home",
-    path: "/",
-    class: "nav-link active",
+    path: "/"
   },
   {
     id: 2,
     name: "Pessoa Usuária",
-    path: "/pessoa-usuaria",
-    class: "nav-link",
+    path: "/pessoa-usuaria"
   },
   {
     id: 3,
     name: "Profissional",
-    path: "/profissional",
-    class: "nav-link",
+    path: "/profissional"
   },
 ];
 
