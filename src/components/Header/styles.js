@@ -20,8 +20,12 @@ export const HeaderContent = styled.header`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     flex-direction: column;
     justify-content: center;
+
+    a {
+      font-size: 2.5rem;
+    }
   }
 `;

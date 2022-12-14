@@ -11,7 +11,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 45rem;
   }
 `;
 
@@ -26,7 +26,7 @@ export const TextAndImageContainer = styled.div`
 
     img {
       margin: 2rem auto;
-      width: 70%;
+      width: 80%;
     }
   }
 `;
