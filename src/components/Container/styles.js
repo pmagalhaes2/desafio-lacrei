@@ -26,6 +26,7 @@ export const TextAndImageContainer = styled.div`
 
     img {
       margin: 2rem auto;
+      width: 70%;
     }
   }
 `;
@@ -46,6 +47,8 @@ export const FooterContainer = styled.ul`
   gap: 2.5rem;
 
   @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
   }
 `;
 

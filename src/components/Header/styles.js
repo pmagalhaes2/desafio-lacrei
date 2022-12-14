@@ -20,7 +20,8 @@ export const HeaderContent = styled.header`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: auto;
+    height: 10vh;
     flex-direction: column;
+    justify-content: center;
   }
 `;

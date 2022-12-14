@@ -8,4 +8,12 @@ export const FooterNav = styled.nav`
   a {
     color: var(--black);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
