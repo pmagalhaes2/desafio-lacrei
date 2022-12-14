@@ -9,7 +9,7 @@ const PessoaUsuariaContent = () => {
       <TextAndImageContainer>
         <Title>Pessoa Usuária</Title>
         <ParagraphWithBorder>
-          A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado
+          A Lacrei garante que pessoas LGBTQIAPN+ recebam atendimento realizado
           por profissionais de qualidade e que atendam às suas necessidades de
           forma segura e acolhedora.
         </ParagraphWithBorder>
