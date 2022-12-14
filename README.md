@@ -9,7 +9,13 @@ O site foi desenvolvido conforme protótipo do Figma, em três páginas, sendo e
   [Acesse o site aqui!](https://desafio-lacrei-patricia-magalhaes.netlify.app/)
 
 ---
+## Desktop Behavior
+![enter link description here](https://github.com/pmagalhaes2/desafio-lacrei/blob/main/src/assets/lacrei-desktop.gif?raw=true)
 
+## Mobile Behavior
+![enter link description here](https://github.com/pmagalhaes2/desafio-lacrei/blob/main/src/assets/lacrei-mobile.gif?raw=true)
+
+---
 ## 🚀 Tecnologias utilizadas
 
 As seguintes ferramentas foram usadas na construção do projeto:
