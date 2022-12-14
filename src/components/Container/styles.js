@@ -6,12 +6,28 @@ export const Container = styled.div`
   padding: var(--padding-size);
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
 `;
 
 export const TextAndImageContainer = styled.div`
   max-width: 540px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin: 2rem auto;
+    }
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -19,14 +35,25 @@ export const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const FooterContainer = styled.ul`
   display: flex;
   gap: 2.5rem;
+
+  @media (max-width: 768px) {
+  }
 `;
 
-export const HeaderContainer = styled(FooterContainer)``;
+export const HeaderContainer = styled(FooterContainer)`
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
+`;
 
 export const IconsContainer = styled.div`
   display: flex;

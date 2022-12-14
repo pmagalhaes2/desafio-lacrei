@@ -11,6 +11,10 @@ export const Button = styled.button`
     font-size: 18px;
     font-weight: 700;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
 `;
 
 export const GreenButton = styled(Button)`

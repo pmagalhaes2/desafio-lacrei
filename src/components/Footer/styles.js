@@ -8,4 +8,9 @@ export const FooterContent = styled.footer`
   height: 10rem;
   padding: 2rem 0px 0.5rem;
   margin: 0px 4rem;
+
+  @media (max-width: 768px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;

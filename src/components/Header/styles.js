@@ -17,4 +17,10 @@ export const HeaderContent = styled.header`
       color: var(--green);
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
 `;

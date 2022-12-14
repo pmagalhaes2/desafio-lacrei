@@ -7,6 +7,11 @@ export const Paragraph = styled.p`
   margin-top: 2rem;
   padding-left: 0px;
   border-left: none;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 `;
 
 export const SmallParagraph = styled.p`
