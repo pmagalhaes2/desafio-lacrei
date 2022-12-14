@@ -25,6 +25,6 @@ export const ParagraphWithBorder = styled(Paragraph)`
   padding-left: 1rem;
 
   @media (max-width: 768px) {
-    text-align: justify;
+    text-align: left;
   }
 `;
