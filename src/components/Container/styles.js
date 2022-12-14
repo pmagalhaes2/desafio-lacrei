@@ -12,6 +12,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 45rem;
+    padding: 2rem 2rem 0px;
   }
 `;
 
@@ -26,7 +27,7 @@ export const TextAndImageContainer = styled.div`
 
     img {
       margin: 2rem auto;
-      width: 80%;
+      width: 90%;
     }
   }
 `;
@@ -49,6 +50,7 @@ export const FooterContainer = styled.ul`
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 `;
 

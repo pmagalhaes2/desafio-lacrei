@@ -10,7 +10,6 @@ export const Paragraph = styled.p`
 
   @media (max-width: 768px) {
     font-size: 1.2rem;
-    text-align: center;
   }
 `;
 
@@ -24,4 +23,8 @@ export const SmallParagraph = styled.p`
 export const ParagraphWithBorder = styled(Paragraph)`
   border-left: 5px solid rgb(1, 135, 98);
   padding-left: 1rem;
+
+  @media (max-width: 768px) {
+    text-align: justify;
+  }
 `;
