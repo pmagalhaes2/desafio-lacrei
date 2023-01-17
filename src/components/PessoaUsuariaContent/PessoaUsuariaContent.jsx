@@ -2,10 +2,12 @@ import { ParagraphWithBorder } from "../Paragraph/styles";
 import vector from "../../assets/vector_2.svg";
 import { Container, TextAndImageContainer } from "../Container/styles";
 import { Title } from "../Title/styles";
+import { Helmet } from "react-helmet";
 
 const PessoaUsuariaContent = () => {
   return (
     <Container>
+       <Helmet><title>Lacrei | Pessoa Usuária</title></Helmet>
       <TextAndImageContainer>
         <Title>Pessoa Usuária</Title>
         <ParagraphWithBorder>

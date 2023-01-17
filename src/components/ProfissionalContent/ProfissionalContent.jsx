@@ -2,10 +2,12 @@ import vector from "../../assets/vector_3.svg";
 import { ParagraphWithBorder } from "../Paragraph/styles";
 import { Container, TextAndImageContainer } from "../Container/styles.js";
 import { Title } from "../Title/styles";
+import { Helmet } from "react-helmet";
 
 const ProfissionalContent = () => {
   return (
     <Container>
+       <Helmet><title>Lacrei | Profissional</title></Helmet>
       <TextAndImageContainer>
         <Title>Profissional</Title>
         <ParagraphWithBorder>

@@ -8,10 +8,12 @@ import {
   TextAndImageContainer,
 } from "../Container/styles";
 import { Title } from "../Title/styles";
+import { Helmet } from "react-helmet";
 
 const HomeComponent = () => {
   return (
     <Container>
+       <Helmet><title>Lacrei | Home</title></Helmet>
       <TextAndImageContainer>
         <Title>Boas vindas a Lacrei Saúde</Title>
         <Paragraph>
